@@ -1,9 +1,3 @@
-Perfeito, Thiago! Aqui vai uma descrição de repositório GitHub para o seu projeto da **Barbearia Estilo Livre**, com foco em Bootstrap e desenvolvimento web responsivo.
-
----
-
-## 📌 Descrição para o GitHub:
-
 # 💈 Barbearia Estilo Livre
 
 Projeto de um site fictício para a **Barbearia Estilo Livre**, desenvolvido como prática de front-end com foco em **HTML5**, **CSS3** e **Bootstrap 5**.
