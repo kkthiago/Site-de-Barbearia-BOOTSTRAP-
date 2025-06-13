@@ -1,0 +1,293 @@
+    /* Header, cabeçalho e footer */
+
+.header__titulo{
+    color: rgb(46, 43, 43) !important;
+    font-family: "Roboto Condensed";
+    font-size: 2.3rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.fundo-header{
+    background-color: rgb(169, 178, 197);
+}
+
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/barbeariafundo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    filter: blur(5px);
+    opacity: 0.9;
+}
+
+.background-blur-depoimentos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/barbeariafundo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.9;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    z-index: 1000;
+}
+
+        /* Links do header/cabeçalho */
+        
+    .nav-link{
+        color: rgb(28, 25, 25) !important;
+        font-size: 1.1rem;
+
+        &:hover{
+            color: rgb(115, 134, 101) !important;
+            font-weight: bold;
+        }
+    }
+
+    .decoration__text{
+        &:hover{
+            color: rgb(208, 208, 208) !important;
+            font-weight: 900;
+        }
+    }
+
+    .selecionado{
+        color: rgb(28, 28, 21) !important;
+        font-weight: 900;
+            &:hover{
+                color: rgb(28, 28, 21) !important;
+                font-weight: bold;
+            }
+    }
+
+    /* Fontes e estilos de texto */
+
+.roboto-condensed-fonte {
+  font-family: "Roboto Condensed";
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.titulo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #000 !important;
+}
+
+.titulo-fundo{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #000 !important;
+    margin: 10px auto 10px auto;
+}
+
+.subtitulo{
+    font-size: 1.8rem;
+    color: #000 !important;
+}
+
+    /* Serviços.html / Carousel */
+
+.carousel-inner{
+    border-radius: 20px;
+}
+
+h1, .carousel__titulo {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.carousel__subtitulo, p, a {
+    font-family: 'Lato', sans-serif;
+    color: #ddd;
+    font-size: 1.2rem;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.carousel-item > .imagem-cliente {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;  
+    border-radius: 20px;
+}
+
+    /* CONTATO */
+
+.numero-telefone{
+    font-family: 'Lato';
+    color: rgb(60, 101, 101);
+    text-decoration: none;
+    font-size: 1.8rem;
+
+    &:hover{
+        color: rgb(60, 101, 101);
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+}
+
+/* Media queries */
+
+        /* Estilizações de texto */
+
+        @media (max-width: 768px) {
+        .titulo {
+            font-size: 1.5rem;
+        }
+        .subtitulo {
+            font-size: 1rem;
+        }
+        .card {
+            margin: 1rem 0;
+        }
+        }
+
+        /* Carousel */
+
+        @media (max-width: 768px) {
+        .imagem-cliente {
+        max-height: 300px;
+        }
+        }
+
+        .imagem-profile{
+        width: 100%;
+        height: 10px;
+        object-fit: cover; 
+        border-radius: 20px;    
+        }
+
+        @media (max-width: 768px) {
+            .carousel-caption {
+                max-width: 90%;
+                padding: 0.5rem;
+            }
+
+            .carousel__titulo {
+                font-size: 1.2rem;
+            }
+
+            .carousel__subtitulo {
+                font-size: 0.9rem;
+            }
+
+            .carousel-caption .btn {
+                font-size: 0.9rem;
+                padding: 0.3rem 0.8rem;
+            }
+        }
+
+        /* Header e Footer */
+        @media (max-width: 768px) {
+            .fundo-header {
+                padding: 0.5rem 1rem;
+            }
+
+            .header__titulo {
+                font-size: 1.2rem;
+            }
+
+            header img {
+                max-width: 60px; 
+            }
+
+            .nav-link {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 768px){
+            header.fundo-header {
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
+            }
+
+            .header__titulo {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+                font-size: 0.9rem;
+                flex-direction: column !important;
+                gap: 0.5rem;
+            }
+        }
+
+    /* Sobre nos */
+
+        @media (max-width: 768px) {
+            .page-wrapper > div {
+                padding: 1rem;
+                min-height: auto !important;
+            }
+        }
+        @media (max-width: 768px) {
+            .card-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card img {
+                width: 100%;
+                height: auto;
+                margin-top: 1rem;
+            }
+
+            .card .titulo {
+                font-size: 1.5rem;
+            }
+
+            .card .subtitulo {
+                font-size: 1rem;
+            }
+        }  
+
+        /* Contato */
+
+        @media (max-width:768px){
+            .cartao-contatos{
+                padding: 1rem;
+                width: 100%;
+                height: auto;
+
+            }
+        }
+            
+        
